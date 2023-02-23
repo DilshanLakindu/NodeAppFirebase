@@ -1,0 +1,32 @@
+{
+  "name": "nodeappfirebase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prestart": "tsc --build --clean && npm run build",
+    "start": "node dist/src/index.js",
+    "predev": "tsc --build --clean && npm run build",
+    "dev": "nodemon src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "firebase-admin": "^11.5.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@types/firebase": "^3.2.1",
+    "auth-routes": "^0.0.1",
+    "express": "^4.18.2",
+    "fcm": "^1.0.3",
+    "fcm-node": "^1.6.1",
+    "firebase": "^8.10.1",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
+  }
+}
